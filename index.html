@@ -1,4 +1,5 @@
 <!doctype html>
+<html>
 <head>
 <title>Zoomy Test Page</title>
 <meta charset=utf-8 />
@@ -8,14 +9,13 @@
 body{
     -webkit-touch-callout: none!important;
 }
-
 .header{
 	width: 600px;
 	height: 200px;
 	margin: 0 auto;
 }
 
-.main{
+#main{
 	width: 600px;
 	height: 600px;
 	margin: auto;
@@ -145,7 +145,7 @@ body{
     position: absolute;
     top: 50%;
     width: 300px;
-    color: #aaa;
+    color: #333;
     text-align: center;
 }
 
@@ -160,35 +160,18 @@ body{
     opacity: 1;
 }
 
-.spinner {
-    width: 40px;
-    height: 40px;
-    margin: 100px auto;
-    background-color: #fff;
-
-    border-radius: 100%;
-    -webkit-animation: scaleout 1.0s infinite ease-in-out;
-    animation: scaleout 1.0s infinite ease-in-out;
-}
 </style>
 
 <script src=jquery.min.js></script>
-
-
 <script src=zoomy.js></script>
 <script src=zag.js></script>
 
-
-
 </head>
 <body>
-
-<div class="header">
-	<img src="img/head.jpg"/>
-</div>
-
-
-<div class="main">
+<div id="main" class="b-toggle">
+    <div class="header">
+        <img src="img/head.jpg"/>
+    </div>
 	<h1 align="center">Штабное №3</h1>
 	<a name="img/big_1.jpg" onclick="return false;" class=zoom >
 	<img src="img/small_1.jpg"  /></a>
@@ -202,7 +185,6 @@ body{
             <a href="https://www.google.ru/intl/ru/chrome/browser/">этой ссылке</a>.
             Приносим извинения за доставленные неудобства.
         </div>
-
 
 <script type="text/javascript">
 	$(function(){
